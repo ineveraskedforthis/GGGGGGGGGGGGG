@@ -432,10 +432,19 @@ colonialmigration_chance =
 	}
 
 	modifier = {
-		factor = 1
+		factor = 0.5
 		location = {
 			owner = {
 				colonial_policy = settlement
+			}
+		}
+	}
+	
+	modifier = {
+		factor = -0.2
+		location = {
+			owner = {
+				colonial_policy = self_rule
 			}
 		}
 	}
@@ -1065,8 +1074,13 @@ conversion_chance =
 	#}
 	
 	modifier = {
-        factor = 0.1
+        factor = 0.13
         country = { government = theocracy }
+    }
+    
+    	modifier = {
+        factor = 0.17
+        country = { government = sublime_synod }
     }
 
     modifier = {
@@ -1175,8 +1189,20 @@ conversion_chance =
 			AND = {
 				has_pop_religion = wompowushan
 				country = { has_global_flag = pudwou_overthrown }
+				NOT = {
+					has_pop_culture = pruuntish
+				}
 			}
         }
+	}
+	
+	modifier = { #shamushic revival
+		factor = 0.3
+		has_pop_culture = pruuntish
+		has_pop_religion = wompowushan
+		country = {
+			has_country_flag = we_are_shamush
+		}
 	}
 	
 	modifier = { #vewugism shattered
@@ -1218,6 +1244,11 @@ conversion_chance =
 			location = { province_id = 221 }
 		}
 	
+	}
+	
+	modifier = {
+		factor = 0.15
+		nationalvalue = assimilation
 	}
 	
 	

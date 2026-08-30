@@ -426,7 +426,9 @@ paguyti_vuyti = {
 							Man-Flesher Brain-Eater "the Fleshmonger" Bone-Taker Hand-Taker Smoke-Breather Sword-Wielder
 							"the Good-headed" Tail-Eater "of the Fire" "of the Sea" "of the Mountain" Gun-Wielder Gâshd-Hater
 							"the Fish" "the Toad" "the Swine" "the Snake" "the Bird" "the Carp" "the Seer" "the Knower" 
-							"the Kinder" "the Sweeter" Good-friend "the Fatter" Blood-Eater Thrall-Taker }
+							"the Kinder" "the Sweeter" Good-friend "the Fatter" Blood-Eater Thrall-Taker "The Smoker"
+							"The Dancer" "of the Woods" "of the West" "of the Wind" "of the Grass" Snake-Tongue Spider-Lips
+							Fire-Lips "the Clean" "the Holy" "the Hateful" }
     }
 	
     paguyti = { 
@@ -441,7 +443,8 @@ paguyti_vuyti = {
 							Man-Flesher Brain-Eater "the Fleshmonger" Bone-Taker Hand-Taker Smoke-Breather Sword-Wielder
 							"the Good-headed" Tail-Eater "of the Fire" "of the Sea" "of the Mountain" Gun-Wielder Gâshd-Hater
 							"the Fish" "the Toad" "the Swine" "the Snake" "the Bird" "the Carp" "the Seer" "the Knower" 
-							"the Kinder" "the Sweeter" Good-friend "the Fatter" Blood-Eater Thrall-Taker }
+							"the Kinder" "the Sweeter" Good-friend "the Fatter" Blood-Eater Thrall-Taker "the Gentle" 
+							Cud-Chewer Bone-Grinder }
     }
 
 }
@@ -1096,14 +1099,14 @@ stouian = {
 
    assatiog = { 
 	  color = { 184 12 61 }
-			first_names = { Touks-Thiaror Posik-Nogor Tero-Gossaiok Papi-Nefe Paioke-Storoustri Thika-Raiosse Afa-Staga Tiako-Pouka
-							Tunir-Stopa Piapa-Iat Gokia-Iokia Tastrio-Puna Raioso-Reso Stage-Paiotuks Stougos-Stekoks Tugor-Koupok 
+			first_names = { Touks-Thiaror Posik-Nogor Tero-Gossaiok Papi-Nefe Paioke-Storoustri Thika-Raiosse Afa-Staga Tiako-Pouka Lat-Gana Naog-Pai Naog-Gana
+							Tunir-Stopa Piapa-Iat Gokia-Iokia Tastrio-Puna Raioso-Reso Stage-Gana Stage-Paiotuks Stougos-Stekoks Tugor-Koupok 
 							Nior-Thastriot Potu-Thuga Thotiosen-Stestre Thakaio-Rafit Stustragun-Gana Touso-Pai Thian-Pugi Tiok-Goforou
-							Thionaio-Thoufak Gugu-Stoun Stiou-Kaioksouk Paion-Nian Naog-Tuaior Stoustrout-Giastres }
+							Thionaio-Thoufak Gugu-Stoun Stiou-Kaioksouk Paion-Nian Naog-Tuaior Stoustrout-Giastres Thian-Pai Thian-Gana }
 
         	last_names = { Touksti Thiarorsti Posiksti Nogorsti Terosti Gossaioksti Paiokesti Storousti Afasti Stagasti Tiakosti 
 						   Poukasti Tunirsti Stopasti Piapasti Iatsti Gokiasti Tastriosti Punastri Raiososti Paiotuksti Stougosti 
-						   Steksoksti Tugorsti Koupuksti Niorsti Thastriotsti Stestresti Thakaiosti }
+						   Steksoksti Tugorsti Koupuksti Niorsti Thastriotsti Stestresti Thakaiosti Puiri}
     }
 
     piok = { 

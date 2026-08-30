@@ -282,6 +282,16 @@ country_event = {
 		if = {
 			limit = {
 				THIS = {
+					tag = AIO
+				}
+			}
+			THIS = { 
+				country_event = { id = 50429 }
+			}
+		}
+		if = {
+			limit = {
+				THIS = {
 					NOT = {
 						OR = {
 							tag = POU
@@ -309,6 +319,7 @@ country_event = {
 							tag = PUS
 							tag = GHE
 							tag = KID
+							tag = AIO
 						}
 					}
 				}
@@ -338,6 +349,12 @@ country_event = {
 		name = "Philosophy and Politics"
 		country_event = { id = 50153 }
 	}
+	
+	#option = {
+	#	name = "The Species of the World"
+	#	country_event = { id = 504xx }
+	#
+	#}
 	
 	option = {
 		name = "Miscellany"
@@ -1887,7 +1904,7 @@ country_event = { #study paorusu
 		NOT = {
 			OR = {
 				has_country_flag = studied_paorusu
-				has_country_flag = paorusu_country
+				has_country_flag = green_country
 				#AND = {
 				#	year = 1350
 				#	THIS = {
@@ -2066,6 +2083,12 @@ country_event = { #study gyahki
 	}
 	
 }
+
+
+#####################
+#### SPECIES ###########
+#####################
+
 
 
 #####################
@@ -3172,6 +3195,26 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = 50429 
+	title = "EVTNAME50429" ##### AIO
+	desc = "EVTDESC40429"
+	picture = "encyclo"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Return to 'Countries' Subheading"
+		country_event = { id = 50146 }
+	}
+
+
+	option = {
+		name = "Close Encylopedia"
+		clr_country_flag = encyclopedia_open
+	}
+}
+
 #####################
 #### CULTURES ########
 ####################
@@ -4169,7 +4212,36 @@ country_event = {
 	}
 	
 
-	
+	option = {
+		name = "The Ferroxaloids of the South"
+		if2 = {
+			limit = {
+				THIS = {
+					any_owned_province = {
+						continent = south_america
+					}
+				}
+			}
+			THIS = {
+				country_event = { id = 50430 }
+			}
+		}
+		
+		if2 = {
+			limit = {
+				NOT = {
+					THIS = {
+						any_owned_province = {
+							continent = south_america
+						}
+					}
+				}
+			}
+			THIS = {
+				country_event = { id = 50123 }
+			}
+		}
+	}
 
 	option = {
 		name = "Close Encylopedia"
@@ -5402,6 +5474,26 @@ country_event = {
 		clr_country_flag = encyclopedia_open
 	}
 }
+
+country_event = {
+	id = 50430
+	title = "EVTNAME50430" ##### Sothern Ferroxaloids
+	desc = "EVTDESC50430"
+	picture = "encyclo"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Return to 'Cultures' Subheading"
+		country_event = { id = 50160 }
+	}
+
+
+	option = {
+		name = "Close Encylopedia"
+		clr_country_flag = encyclopedia_open
+	}
+}
 country_event = {
 	id = 50375
 	title = "EVT50375NAME" ##### Mjhman
@@ -6263,6 +6355,7 @@ country_event = {
 		}
 	}
 	
+	
 	option = {
 		name = "Theocratism"
 		if = {
@@ -6303,6 +6396,55 @@ country_event = {
 	option = {
 		name = "Paternalistic Council"
 		country_event = { id = 50266 }
+	}
+	
+	option = {
+		name = "Pastoral Confederacy"
+		country_event = { id = 50428 }
+	}
+	
+	option = {
+		name = "Statist Bureaucracy"
+		if = {
+			limit = {
+				is_ideology_enabled = statist
+			}
+			THIS = {
+				country_event = { id = 50426 }
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_ideology_enabled = statist
+				}
+			}
+			THIS = {
+				country_event = { id = 50123 }
+			}
+		}
+	}
+	
+	option = {
+		name = "Grand Syndicate"
+		if = {
+			limit = {
+				is_ideology_enabled = statist
+			}
+			THIS = {
+				country_event = { id = 50427 }
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_ideology_enabled = statist
+				}
+			}
+			THIS = {
+				country_event = { id = 50123 }
+			}
+		}
 	}
 
 
@@ -6395,6 +6537,63 @@ country_event = {
 	id = 50266
 	title = "EVT50266NAME" ##### Pat-Council
 	desc = "EVT50266DESC"
+	picture = "encyclo"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Return to Philosophy and Politics"
+		country_event = { id = 50153 }
+	}
+
+	option = {
+		name = "Close Encylopedia"
+		clr_country_flag = encyclopedia_open
+	}
+}
+
+country_event = {
+	id = 50426
+	title = "EVT50426NAME" ##### Pastoral Confederacy
+	desc = "EVT50426DESC"
+	picture = "encyclo"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Return to Philosophy and Politics"
+		country_event = { id = 50153 }
+	}
+
+	option = {
+		name = "Close Encylopedia"
+		clr_country_flag = encyclopedia_open
+	}
+}
+
+country_event = {
+	id = 50427
+	title = "EVT50427NAME" ##### Grand Syndicate
+	desc = "EVT50427DESC"
+	picture = "encyclo"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Return to Philosophy and Politics"
+		country_event = { id = 50153 }
+	}
+
+	option = {
+		name = "Close Encylopedia"
+		clr_country_flag = encyclopedia_open
+	}
+}
+
+country_event = {
+	id = 50428
+	title = "EVT50428NAME" ##### Pastoral Confederacy
+	desc = "EVT50428DESC"
 	picture = "encyclo"
 	
 	is_triggered_only = yes

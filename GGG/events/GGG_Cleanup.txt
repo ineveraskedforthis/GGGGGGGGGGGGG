@@ -1,3 +1,32 @@
+#country_event = {
+#	id = xxxxx
+#	title = "central bank civ printing"
+#	desc = "ai"
+#	
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#	
+#	
+#	}
+#	
+#	effect = {
+#		any_country = {
+#			limit = {
+#				OR = {
+#					is_greater_power = yes
+#					is_secondary_power = yes
+#					number_of_states = 5
+#				}
+#			}
+#		
+#		}
+#	
+#	}
+#
+#}
+
+
 country_event = {
     id = 33337
     title = "serf_cleanup"
@@ -1903,7 +1932,7 @@ country_event = {
 					is_greater_power = yes
 				}
 				ai = yes
-				prestige = 40
+				prestige = 15
 				civilized = yes
 			}
 			treasury = 50000
@@ -1916,7 +1945,7 @@ country_event = {
 					is_greater_power = yes
 				}
 				ai = yes
-				prestige = 20
+				prestige = 4
 				civilized = yes
 			}
 			treasury = 25000
@@ -38483,7 +38512,7 @@ country_event = {
 
 	trigger = {
 		ai = yes
-		exists = no
+		exists = yes
 		OR = {
 			AND = {
 				has_country_flag = won_hegemony_war

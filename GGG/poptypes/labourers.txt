@@ -201,22 +201,34 @@ migration_target = {
         unemployment = 0.1
         state_scope = { has_factories = no }
     }
-    modifier = {
-        factor = 1.2
-        total_pops = 150000
+    
+      modifier = {
+	factor = 1.2
+	country = {
+		NOT = {
+			colonial_policy = self_rule 
+		}
+	}
+	is_colonial = yes
+	is_primary_culture = no
     }
-    modifier = {
-        factor = 1.2
-        total_pops = 250000
-    }
-    modifier = {
-        factor = 1.2
-        total_pops = 500000
-    }
-    modifier = {
-        factor = 1.2
-        total_pops = 750000
-    }
+    
+    #modifier = {
+    #    factor = 1.2
+    #    total_pops = 150000
+    #}
+    #modifier = {
+    #    factor = 1.2
+    #    total_pops = 250000
+    #}
+    #modifier = {
+    #    factor = 1.2
+    #    total_pops = 500000
+    #}
+    #modifier = {
+    #    factor = 1.2
+    #    total_pops = 750000
+    #}
 
     #modifier = {
     #    factor = 0
@@ -333,12 +345,12 @@ migration_target = {
     }
 
     modifier = {
-        factor = 0
+        factor = 0.01
         terrain = small_island
     }
 
     modifier = {
-        factor = 0
+        factor = 0.01
         terrain = coral_island
     }
 
@@ -952,10 +964,13 @@ serfs = {
         factor = 0.01
 		modifier = {
 			factor = -100
-			OR = {
-				is_primary_culture = no
-				is_accepted_culture = no
+
+			is_primary_culture = no
+			is_accepted_culture = no
+			NOT = {
+				has_pop_culture = paguyti
 			}
+
             NOT = {
                 country = { has_global_flag = craftsman_exploit_reenabled }
             }
@@ -1893,32 +1908,37 @@ ideologies = {
 
     statist = {
         factor = 1.05
-        modifier = {
-            factor = 0.9
-            OR = { is_accepted_culture = yes is_primary_culture = yes }
-            OR = {
-                AND = {
-                    OR = {
-                        nationalvalue = nv_autocracy
-                        nationalvalue = nv_tradition
-                    }
-                    country = { civilized = yes }
-                }
-                state_scope = { is_slave = yes }
-            }
-        }
+        #modifier = {
+        #    factor = 0.9
+        #    OR = { is_accepted_culture = yes is_primary_culture = yes }
+        #    OR = {
+        #        AND = {
+        #            OR = {
+        #                nationalvalue = nv_autocracy
+        #                nationalvalue = nv_tradition
+        #            }
+        #            country = { civilized = yes }
+        #        }
+        #        state_scope = { is_slave = yes }
+        #    }
+        #}
         modifier = {
             factor = 0.5
             militancy = 6
         }
-        modifier = {
-            factor = 1.2
-            nationalvalue = nv_liberty
-            OR = {
-                is_accepted_culture = yes
-                is_primary_culture = yes
-            }
-        }
+        #modifier = {
+        #    factor = 1.2
+        #    nationalvalue = nv_liberty
+        #    OR = {
+        #        is_accepted_culture = yes
+        #        is_primary_culture = yes
+        #    }
+        #}
+	
+	modifier = {
+             factor = 1.5
+	     unemployment = 50
+	}
         modifier = {
             factor = 1.1
             consciousness = 5
@@ -2035,6 +2055,11 @@ ideologies = {
             factor = 2
             ruling_party_ideology = absolutist
         }
+	
+	modifier = {
+             factor = 1.7
+	     unemployment = 70
+	}
 
         modifier = {
             factor = 1.5

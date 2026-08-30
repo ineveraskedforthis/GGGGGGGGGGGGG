@@ -1435,7 +1435,10 @@ province_event = {
 		}
 		owner = {
 			tag = THIS
-			is_greater_power = yes
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
 			nationalism_n_imperialism = 1
 		}
 	}
@@ -3105,7 +3108,7 @@ country_event = {
 		OR = {	
 			has_country_flag = liberates_brothers
 			is_culture_group = gashdzii
-			is_culture_group = colonial_gashdzii
+			#is_culture_group = colonial_gashdzii
 			#primary_culture = poumnian
 			#is_culture_group = peninsular_diwvo
 			is_culture_group = byotrish
@@ -3762,6 +3765,34 @@ country_event = { #Victim of Vokonazhi aggression AI ONLY
 				target = THIS
 				attacker_goal = { 
 					casus_belli = conquest
+				}
+			}
+		}
+	}
+}
+
+country_event = { #AI_aggression_event_colonial
+	id = 50448
+	title = "EVTNAME50448"
+	desc = "EVTDESC50448"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVT50225OPTA"
+		FROM = {
+            relation = {
+                who = THIS
+                value = -200
+            }
+            diplomatic_influence = {
+                who = THIS
+                value = -200
+            }
+			war = {
+				target = THIS
+				attacker_goal = { 
+					casus_belli = swallow_me_whole
 				}
 			}
 		}
@@ -4435,6 +4466,10 @@ country_event = {
 		any_neighbor_country  = {
 			limit = {
 				civilized = yes
+				relation = {
+					who = THIS
+					value = 50
+				}
 				ai = no
 				OR = {
 					government = princely_despotate
@@ -4442,6 +4477,9 @@ country_event = {
 					government = theocracy
 				}
 				war = no
+				NOT = {
+					has_country_modifier = heard_calls_for_aid
+				}
 			}
 			country_event = { 
 				id = 50303
@@ -4472,6 +4510,10 @@ country_event = {
 			who = FROM
 			value = 50
 		}
+		add_country_modifier = {
+			name = heard_calls_for_aid
+			duration = 720
+		}
 	}
 	
 	option = { #No
@@ -4479,6 +4521,10 @@ country_event = {
 		relation = {
 			who = FROM
 			value = -100
+		}
+		add_country_modifier = {
+			name = heard_calls_for_aid
+			duration = 720
 		}
 	}
 }

@@ -206,6 +206,157 @@ country_event = {
     }
 }
 
+#########################
+###### PANNING ON THE GULF ####
+#########################
+
+country_event = { 
+    id = 50462
+    title = "EVTNAME50462" #demand a concession from unciv
+    desc = "EVTDESC50462" 
+    picture = "bafozh"
+	
+	trigger = {
+		civilized = yes
+		is_greater_power = yes
+		total_amount_of_ships = 13
+		any_owned_province = {
+			is_overseas = yes
+			NOT = {
+				continent = oceania
+			}
+		}
+		year = 1320
+		NOT = {
+			has_global_flag = krayland_gold
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 20
+	}
+	
+	option = {
+		name = "We ought to declare a nominal protectorate over these regions."
+		set_global_flag = krayland_gold
+		1459 = {
+			secede_province = THIS
+			trade_goods = precious_metal
+			add_province_modifier = { name = switched_production duration = 912 }
+			add_province_modifier = { name = gold_fever duration = 1825 }
+			add_core = KHR
+		}
+		1479 = {
+			secede_province = THIS
+			add_core = KHR
+		}
+		
+		relation = {
+			who = KHR
+			value = -200
+		}
+	
+	}
+	
+	option = {
+		name = "Why not just work with the Khan in the harvesting of the Gold?"
+		set_global_flag = krayland_gold
+		1459 = {
+			secede_province = THIS
+			secede_province = KHR
+			trade_goods = precious_metal
+			add_province_modifier = { name = switched_production duration = 912 }
+			add_province_modifier = { name = gold_fever duration = 1825 }
+			add_core = KHR
+			any_pop = {
+				militancy = 3
+			}
+		}
+		1479 = {
+			secede_province = THIS
+			secede_province = KHR
+			add_core = KHR
+		}
+		
+		relation = {
+			who = KHR
+			value = 200
+		}
+		
+		diplomatic_influence = {
+			who = KHR
+			value = 200
+		}
+		
+		KHR = {
+			research_points = 2000
+		}
+	
+	}
+    
+}
+
+country_event = { 
+    id = 50463
+    title = "EVTNAME50463" 
+    desc = "EVTDESC50463" 
+    picture = "bafozh"
+    
+    trigger = {
+	year = 1330
+	tag = KHR
+	owns = 1459
+	1480 = {
+		empty = yes
+	}
+	1460 = {
+		empty = yes
+	}
+	1517 = {
+		empty = yes
+	}
+	1520 = {
+		empty = yes
+	}
+	1521 = {
+		empty = yes
+	}
+	1496 = {
+		empty = yes
+	}
+    }
+    
+    mean_time_to_happen = {
+	months = 30
+    }
+    
+    option = {
+	name = "As is only right."
+	
+	1480 = {
+		secede_province = THIS
+	}
+	1460 = {
+		secede_province = THIS
+	}
+	1517 = {
+		secede_province = THIS
+	}
+	1520 = {
+		secede_province = THIS
+	}
+	1521 = {
+		secede_province = THIS
+	}
+	1496 = {
+		secede_province = THIS
+	}
+    }
+}
+
+
 ###########################
 ### RANDOM COLONIAL CBs ###
 ###########################
@@ -587,7 +738,7 @@ country_event = {
 
     option = {
         name = "EVT50040OPTA"
-		badboy = 5
+		badboy = 2.8
 		
 		random_country = {
 			limit = { 
@@ -1753,3 +1904,9 @@ country_event = {
 		}
     }
 }
+
+
+#######################
+#### SCRAMBLE FOR BAFOZH ###
+#######################
+

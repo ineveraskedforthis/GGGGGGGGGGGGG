@@ -498,11 +498,55 @@ wicked;Wicked;;;;;;;;;;;;;
 infamy_decay_2;Infamy Decay -0.2;;;;;;;;;;;;;
 infamy_decay_4;Infamy Decay -0.4;;;;;;;;;;;;;
 infamy_decay_6;Infamy Decay -0.6;;;;;;;;;;;;;
+infamy_decay_2_desc;A player has set global infamy decay to have an additional -0.2 per tick;;;;;;;;;;;;;
+infamy_decay_4_desc;A player has set global infamy decay to have an additional -0.4 per tick;;;;;;;;;;;;;
+infamy_decay_6_desc;A player has set global infamy decay to have an additional -0.6 per tick;;;;;;;;;;;;;
 open_markets;Open Markets;;;;;;;;;;;;;x
 open_markets_short;Force $RECIPIENT$ to End Sanctions.;;;;;;;;;;;;;x
 open_markets_setup;Force $RECIPIENT$ into a trade agreement with us, reducing the effects of sanctions.;;;;;;;;;;;;;x
 open_markets_desc;Force an enemy §Great Power§W to end their sanctions against us. Enough forced open markets will break the back of the sanctions regime against us.;;;;;;;;;;;;;x
 international_hegemon;International Hegemony;;;;;;;;;;;;;
 trading_in_pruub;Pruub Monopoly;;;;;;;;;;;;;
+peacetime_mobilisation_desc;The decision by the government to activate our mobilisation plans has caused widespread unrest and confusion, and fear in our neighbours.;;;;;;;;;;;;;
 NORMAL_WAR_MARKETS_NAME;$ORDER$$SECOND$-$FIRST$ Trade War;;;;;;;;;;;;;x
 AGGRESSION_WAR_MARKETS_NAME;$ORDER$$SECOND$-$FIRST$ Trade War;;;;;;;;;;;;;x
+conquest_dp;Conquest;;;;;;;;;;;;;x
+conquest_dp_short;Annex $RECIPIENT$;;;;;;;;;;;;;x
+conquest_dp_setup;Annex $RECIPIENT$;;;;;;;;;;;;;x
+conquest_dp_desc;Annex a single-state §Ycountry§! with more than 900,000 pops;;;;;;;;;;;;;x
+baronial_dominance;Dominant Barons;;;;;;;;;;;;;x
+baronial_dominance_desc;The old and great aristocratic families have achieved total dominance of the privy council and the Takemogine government.;;;;;;;;;;;;;x
+clerical_dominance;Dominant Clerics;;;;;;;;;;;;;x
+clerical_dominance_desc;The temples and the clerical schools have acheived total dominance of privy council and the Takemogine government.;;;;;;;;;;;;;x
+assembly_dominance;Dominant Yewhaut;;;;;;;;;;;;;x
+assembly_dominance_desc;The Yewhaut, the municipal assembly of Siekakhz, traditionally the domain of the great merchants and their retainers, clients, and creatures, dominates the privy council and the Takemogine Government.;;;;;;;;;;;;;x
+powerful_barons;Powerful Barons;;;;;;;;;;;;;x
+weak_barons;Weak Barons;;;;;;;;;;;;;x
+powerful_clergy;Powerful Clergy;;;;;;;;;;;;;x
+weak_clergy;Weak Clergy;;;;;;;;;;;;;x
+powerful_assembly;Powerful Yewhaut;;;;;;;;;;;;;x
+weak_assembly;Weak Yewhaut;;;;;;;;;;;;;x
+drupe_torched;Drupe Torched;;;;;;;;;;;;;x
+pudwou_overthrown;Pudwou Overthrown;;;;;;;;;;;;;x
+jur_worship_prohibited;J'ur Worship Prohibited;;;;;;;;;;;;;x
+jur_worship_tollerated;J'ur Worship Tollerated;;;;;;;;;;;;;x
+SHADOWY_INVESTOR;Government Mints;;;;;;;;;;;;;x
+heard_calls_for_aid;Heard Calls for Aid;;;;;;;;;;;;;x
+heard_calls_for_aid_desc;We have recieved diplomats from another country requesting our aid in putting down rebellion.;;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME;$ORDER$War of $FIRST$ Control Over $SECOND_COUNTRY$;
+AGRESSION_WAR_PUPPET_NAME;$ORDER$War of $FIRST$ Control Over $SECOND_COUNTRY$;
+AGGRESSION_WAR_PUPPET_NAME;$ORDER$War of $FIRST$ Control Over $SECOND_COUNTRY$;
+UNIT_PRICE;Unit price: ¤§Y$VAL$§W;;;;;;;;;;;;;x
+PROVINCEVIEW_GOODSINCOME;Sold §Y$GOODS$§W for ¤§Y$VALUE$§W yesterday;;;;;;;;;;;;;x
+baronial_estates;Baronial Estates;;;;;;;;;;;;;x
+baronial_estates_desc;In this province, the writ to exploit the land and rule the people has been granted to several powerful baronial families, who tend to support the lives of them and their clients with their untaxable estates.;;;;;;;;;;;;;x
+clerical_estates;Clerical Estates;;;;;;;;;;;;;x
+clerical_estates_desc;In this province, the writ to exploit the land and rule the natives has been entrusted to several temples and clerical instituions, who support themselves by means of private planatations, reducing the amount of land available for exploitation.;;;;;;;;;;;;;x
+clergy_pre;The influence of the clergy is currently;;;;;;;;;;;;x
+baron_pre;The influence of the barons is currently;;;;;;;;;;;;x
+assembly_pre;The influence of the assembly is currently;;;;;;;;;;;;x
+national_resistance;Cultural Independence War;;;;;;;;;;;;x
+national_resistance_desc;This state is currently in a war for rulership of its own culture against an imperial overlord. Such a struggle is attracting broad support from the male population.;;;;;;;;;;;;x
+colonial_overlordship;Colonial Wardship;;;;;;;;;;;;x
+colonial_overlordship_desc;This state is the political artifice of a colonial overlord, who has made broad promises about the advancement of civilisation and an improved life for the native population.;;;;;;;;;;;;x
+sanctions_disabled;Sanctions Disabled;;;;;;;;;;;;;x

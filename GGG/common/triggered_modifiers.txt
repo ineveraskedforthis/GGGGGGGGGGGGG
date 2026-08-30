@@ -3,31 +3,174 @@
 #
 # Effects are fully scriptable here.
 
-trading_in_pruub = {
+
+powerful_barons = {
 	trigger = {
-		big_producer = opium
+		tag = TAK
+		check_variable = {
+			which = barons_influence
+			value = 3
+		}
+		NOT = {
+			has_country_flag = dominant_clergy
+			has_country_flag = dominant_barons
+			has_country_flag = dominant_assembly
+		}
 	}
-	prestige = 0.1
-	loan_interest = -0.1
-	influence_modifier = 0.2
+	
+	rich_vote = 0.1
+	naval_organisation = 0.05
+	naval_unit_start_experience = 10
+	supply_consumption = 0.05
+	administrative_efficiency_modifier = -0.03
+	
 }
+
+weak_barons = {
+	trigger = {
+		tag = TAK
+		NOT = {
+			check_variable = {
+				which = barons_influence
+				value = 1
+			}
+		}
+		NOT = {
+			has_country_flag = dominant_clergy
+			has_country_flag = dominant_barons
+			has_country_flag = dominant_assembly
+		}
+	}
+	
+	rich_vote = -0.05
+	naval_organisation = -0.02
+	naval_unit_start_experience = -5
+	supply_consumption = -0.05
+	administrative_efficiency_modifier = 0.01
+	
+}
+
+powerful_clergy = {
+	trigger = {
+		tag = TAK
+		check_variable = {
+			which = clergy_influence
+			value = 3
+		}
+		NOT = {
+			has_country_flag = dominant_clergy
+			has_country_flag = dominant_barons
+			has_country_flag = dominant_assembly
+		}
+	}
+	
+	middle_vote = 0.1
+	suppression_points_modifier = 0.2
+	mobilisation_economy_impact = -0.25
+	factory_cost = 0.1
+	social_reform_desire = -0.1
+	
+}
+
+weak_clergy = {
+	trigger = {
+		tag = TAK
+		NOT = {
+			check_variable = {
+				which = clergy_influence
+				value = 1
+			}
+		}
+		NOT = {
+			has_country_flag = dominant_clergy
+			has_country_flag = dominant_barons
+			has_country_flag = dominant_assembly
+		}
+	}
+	
+	middle_vote = -0.05
+	suppression_points_modifier = -0.1
+	mobilisation_economy_impact = 0.05
+	factory_cost = -0.05
+	social_reform_desire = 0.05
+	
+}
+
+powerful_assembly = {
+	trigger = {
+		tag = TAK
+		check_variable = {
+			which = assembly_influence
+			value = 3
+		}
+		NOT = {
+			has_country_flag = dominant_clergy
+			has_country_flag = dominant_barons
+			has_country_flag = dominant_assembly
+		}
+	}
+	
+	poor_vote = 0.1
+	administrative_efficiency_modifier = 0.02
+	political_reform_desire = 0.05
+	issue_change_speed = 0.1
+	min_social_spending = 0.1
+	
+}
+
+weak_assembly = {
+	trigger = {
+		tag = TAK
+		NOT = {
+			check_variable = {
+				which = assembly_influence
+				value = 1
+			}
+		}
+		NOT = {
+			has_country_flag = dominant_clergy
+			has_country_flag = dominant_barons
+			has_country_flag = dominant_assembly
+		}
+	}
+	
+	poor_vote = -0.05
+	administrative_efficiency_modifier = -0.01
+	political_reform_desire = -0.05
+	issue_change_speed = -0.05
+	min_social_spending = -0.1
+	
+}
+
+#trading_in_pruub = {
+#	trigger = {
+#		big_producer = opium
+#	}
+#	#prestige = 0.1
+#	loan_interest = -0.1
+#	influence_modifier = 0.2
+#}
 
 international_sanctions = {
         trigger = {
-			badboy = 1.3 # 46.8
-            NOT = { has_global_flag = sanctions_disabled }
-	    NOT = { 
-		check_variable = {
-			which = international_hegemon
-			value = 4
+		NOT = {
+			war_exhaustion = 45
 		}
-        }
+		badboy = 1.3 # 46.8
+		NOT = { has_global_flag = sanctions_disabled }
+		NOT = { 
+			check_variable = {
+				which = international_hegemon
+				value = 4
+			}
+		}
+	}
 
     import_cost = 0.5
     diplomatic_points_modifier = -0.6
     non_accepted_pop_militancy_modifier = 0.2
     prestige = -0.3
-    war_exhaustion = 2.0
+    war_exhaustion = 0.5
     core_pop_militancy_modifier = 0.1
     icon = 6
 }

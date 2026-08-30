@@ -2,6 +2,55 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
+heard_calls_for_aid = {
+	icon = 5
+}
+
+baronial_estates = {
+	local_repair = 0.25
+	local_ship_build = -0.25
+	farm_rgo_size = -0.25
+	mine_rgo_size = -0.25
+	rich_income_modifier = 0.25
+	middle_life_needs = -0.25
+	icon = 33
+}
+
+clerical_estates = {
+	local_ruling_party_support = 0.25
+	farm_rgo_size = -0.25
+	mine_rgo_size = -0.25
+	middle_income_modifier = 0.25
+	rich_life_needs = -0.25
+	icon = 33
+}
+
+baronial_dominance = {
+	rich_vote = 0.15
+	naval_organisation = 0.1
+	naval_unit_start_experience = 15
+	supply_consumption = 0.1
+	administrative_efficiency_modifier = -0.04
+	icon = 5
+}
+
+clerical_dominance = {
+	middle_vote = 0.15
+	suppression_points_modifier = 0.3
+	mobilisation_economy_impact = -0.3
+	factory_cost = 0.15
+	social_reform_desire = -0.15
+	icon = 5
+}
+
+assembly_dominance = {
+	poor_vote = 0.15
+	administrative_efficiency_modifier = 0.03
+	political_reform_desire = 0.1
+	issue_change_speed = 0.15
+	min_social_spending = 0.15
+	icon = 5
+}
 
 war_torn = {
     local_ruling_party_support = -0.5
@@ -292,6 +341,15 @@ minor_outrage_national = {
 	tax_efficiency = -0.05
 	global_pop_militancy_modifier = 0.01
 	global_pop_consciousness_modifier = 0.01
+	icon = 30
+}
+
+national_resistance = {
+	mobilisation_size = 0.07
+}
+
+colonial_overlordship = {
+	ruling_party_support = 0.2
 	icon = 30
 }
 

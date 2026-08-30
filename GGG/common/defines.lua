@@ -1,7 +1,7 @@
 defines = {
 
 start_date = '1308.1.1',
-end_date = '1408.1.1',
+end_date = '1408.1.2',
 
 country = {
     YEARS_OF_NATIONALISM     = 20,   -- Years of Nationalism
@@ -95,11 +95,11 @@ country = {
 
 economy = {
     MAX_DAILY_RESEARCH            = 100,
-    LOAN_BASE_INTEREST            = 0.02,
+    LOAN_BASE_INTEREST            = 0.0,
     BANKRUPTCY_EXTERNAL_LOAN_YEARS    = 10,
     BANKRUPTCY_FACTOR = 0.2,
-    SHADOWY_FINANCIERS_MAX_LOAN_AMOUNT = 300000,
-    MAX_LOAN_CAP_FROM_BANKS = 20, -- can loan max % of country tax base from single country
+    SHADOWY_FINANCIERS_MAX_LOAN_AMOUNT = 0,
+    MAX_LOAN_CAP_FROM_BANKS = 0, -- can loan max % of country tax base from single country
     GUNBOAT_LOW_TAX_CAP = 0.0,
     GUNBOAT_HIGH_TAX_CAP = 1.0,
     GUNBOAT_FLEET_SIZE_FACTOR = 100,
@@ -113,8 +113,8 @@ economy = {
     CIV_BASE_SHARE_FACTOR = 0.75,
     UNCIV_BASE_SHARE_FACTOR = 1,
     FACTORY_PAYCHECKS_LEFTOVER_FACTOR = 0.6, -- % of how much we pay to the pops and capitalists, from the leftovers.
-    MAX_FACTORY_MONEY_SAVE = 1000,    -- how much money is stored maximum in a factory.
-    SMALL_DEBT_LIMIT = 20000,
+    MAX_FACTORY_MONEY_SAVE = 10000,    -- how much money is stored maximum in a factory.
+    SMALL_DEBT_LIMIT = 100000,
     FACTORY_UPGRADE_EMPLOYEE_FACTOR = 0.7, -- determines how close to the employee limit we need to be before "upgrade all" will upgrade/expand a given factory (1 = 100%).
     RGO_SUPPLY_DEMAND_FACTOR_HIRE_HI = 0.2,    -- how fast pops are Hired when there is a high demand
     RGO_SUPPLY_DEMAND_FACTOR_HIRE_LO = 0.02,    -- how fast pops are Hired when there is a medium demand
@@ -660,7 +660,7 @@ pops = {
 
     NATIONAL_FOCUS_DIVIDER = 400000.0,
 
-    POP_SAVINGS = 0.03,
+    POP_SAVINGS = 0.0,
 
     STATE_CREATION_ADMIN_LIMIT = 0.01,
     MIL_TO_JOIN_REBEL = 7, -- Rebels over this will join a faction
@@ -676,7 +676,7 @@ pops = {
 
     MIL_HIT_FROM_CONQUEST = 4, -- how much militancy grows in a province if taken without being core.
     LUXURY_CON_CHANGE = 0.001, -- con boost from over-buying luxury goods
-    INVENTION_IMPACT_ON_DEMAND = 0.014, -- how much each invention in a country increases demand for a product in percent
+    INVENTION_IMPACT_ON_DEMAND = 0.017, -- how much each invention in a country increases demand for a product in percent
     ARTISAN_SUPPRESSED_COLONIAL_GOODS_CATEGORY = 0, -- Goods category index not produced in colonies
     ISSUE_MOVEMENT_JOIN_LIMIT = 8,
     ISSUE_MOVEMENT_LEAVE_LIMIT = 7,
